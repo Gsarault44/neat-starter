@@ -5,15 +5,22 @@ title: Test
 stars: 4
 count: 183
 price: $4.42
+description: descriptiion
 facts: /static/img/box3in1.png
 ingredients: Cardboard
 author: greg
 date: 2020-09-01
+review:
+  - review_title: Best Cereal Ever!
+    review_submitted: Submitted 2 Months ago
+    review_by: By Melissa
+    review_stars: 2
+    review_content: I like the cereal
+    review_location: out side Philly
 tags:
   - left
   - center
   - right
-description: descriptiion
 ---
 # This is a Heading h1
 
