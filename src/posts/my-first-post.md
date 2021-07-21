@@ -1,12 +1,19 @@
 ---
+headline: Banana Headline
+subhead: sub headline
 title: Test
-description: test
+stars: 4
+count: 183
+price: $4.42
+facts: /static/img/box3in1.png
+ingredients: Cardboard
 author: greg
 date: 2020-09-01
 tags:
   - left
   - center
   - right
+description: descriptiion
 ---
 # This is a Heading h1
 
