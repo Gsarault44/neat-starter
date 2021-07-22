@@ -6,7 +6,7 @@ product_pieces: /static/img/premier-silo-1.png
 headline: Feel good about great taste.
 subhead: Kickstart your morning with 20g of healthy, tasty protein.
 title: Premier Protein
-stars: 3
+stars: ""
 count: 2
 price: $3.79
 description: When you pour yourself a bowl of Premier Protein® Mixed Berry
