@@ -27,7 +27,7 @@ collections:
         options: ["Classy", "Cartoon"]
       - widget: select
         label: "Background Color"
-        name: "bg-color"
+        name: "bg_color"
         multiple: false
         create: false
         options: ["Blue", "Yellow", "Orange", "White"]
@@ -36,8 +36,8 @@ collections:
       - { label: "Intro Headline", name: "headline", widget: "string" }
       - { label: "Intro Subhead", name: "subhead", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Stars", name: "stars", widget: "number" }
-      - { label: "Review Count", name: "count", widget: "number" }
+      - { label: "Stars", name: "stars", widget: "number", required: false }
+      - { label: "Review Count", name: "count", widget: "number", required: false }
       - { label: "Price", name: "price", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Nutrition Facts", name: "facts", widget: "image" }
