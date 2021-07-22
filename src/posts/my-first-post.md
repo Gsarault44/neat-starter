@@ -1,5 +1,5 @@
 ---
-font: Cartoon
+font: Classy
 bg_color: Blue
 product_package: /static/img/box3in1.png
 product_pieces: /static/img/pebbles.png
