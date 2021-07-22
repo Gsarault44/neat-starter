@@ -7,7 +7,7 @@ headline: Feel good about great taste.
 subhead: Kickstart your morning with 20g of healthy, tasty protein.
 title: Premier Protein
 stars: 4
-count: 2
+count: 23
 price: $3.79
 description: When you pour yourself a bowl of Premier Protein® Mixed Berry
   Almond cereal, you really are making breakfast the most important meal of the
