@@ -19,6 +19,20 @@ collections:
     editor:
       preview: true
     fields:
+      - widget: select
+        label: "Font"
+        name: "font"
+        multiple: false
+        create: false
+        options: ["Classy", "Cartoon"]
+      - widget: select
+        label: "Background Color"
+        name: "bg-color"
+        multiple: false
+        create: false
+        options: ["Blue", "Yellow", "Orange", "White"]
+      - { label: "Product Package", name: "product_package", widget: "image" }
+      - { label: "Product Float Pieces", name: "product_pieces", widget: "image" }
       - { label: "Intro Headline", name: "headline", widget: "string" }
       - { label: "Intro Subhead", name: "subhead", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
