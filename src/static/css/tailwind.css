@@ -63,6 +63,10 @@ table {
   margin-bottom: 52px;
 }
 
+.product-media img {
+  width: 100%;
+}
+
 .u-bg-color--Yellow {
   background: rgb(255,255,255);
   background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(253,215,87,1) 16%);
