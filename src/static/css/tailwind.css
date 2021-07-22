@@ -67,6 +67,64 @@ table {
   width: 100%;
 }
 
+
+.container {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.answer {
+  display: none;
+}
+
+.shown .answer{
+  display: block;
+}
+
+.accordion {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+}
+
+.accordion h3 {
+  border-bottom: 1px solid #472118;
+  position: relative;
+  margin: 10px 0;
+  padding: 20px 0;
+  color: black;
+}
+.accordion h3::after,
+.accordion h3::before {
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  margin-top: -5px;
+  right: 30px;
+}
+
+.accordion h3 ::after {
+  border-top-color: white;
+  border-width: 10px;
+  margin-right: -10px;
+}
+
+.accordion h3 ::before {
+  border-width: 13px;
+  margin-right: -13px;
+}
+
+.accordion h3:hover{
+  color:white;
+}
+
+
 .u-bg-color--Yellow {
   background: rgb(255,255,255);
   background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(253,215,87,1) 16%);
@@ -78,6 +136,96 @@ table {
   font-size: calc(2.375rem + 52 * ((100vw - 320px) / 1300));
   letter-spacing: 0.02em;
   line-height: 1.2;
+}
+
+
+
+.footer {
+  background-color: #472118;
+  padding: 42px 20px 71px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-copy {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-content {
+    display: flex;
+    justify-content: space-betweens;
+  }
+}
+
+
+.flex-content > div {
+  flex: 0 0 50%;
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-list li {
+  flex: 0 0 33%;
+}
+
+.footer-copy p {
+  color: #FFFFFF;
+}
+
+.footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Graphie;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.03em;
+}
+
+.desc-icons {
+  margin: 25px 0;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+}
+
+.counter {
+  display: inline-flex;
+  background-color: #FFFFFF;
+  border: 1px solid #231C0F;
+  border-radius: 8px;
+  margin-right: 19px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.count-up {
+  padding: 12px 20px;
+  font-size: 22px;
+}
+
+.count-down {
+  padding: 12px 20px;
+  font-size: 22px;
+}
+
+.button {
+  background-color: #DA291C;
+  border-radius: 8px;
+  padding: 16px 80px;
+  color: #FFFFFF;
+  box-shadow: none;
+  border: 0;
+  text-transform: uppercase;
 }
 
 .u-bg-color--Yellow .intro p {

@@ -13,7 +13,7 @@
     {% block head %}{% endblock %}
     <link href="https://unpkg.com/blueprint-css@3.1.1/dist/blueprint.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
-    <script src="/static/js/main.js"></script>
+    
     {% if prism == true %}
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
     {% endif %}
@@ -27,6 +27,7 @@
     {% include "./partials/footer.html" %}
 
     <script src="/static/js/alpine.js"></script>
+    <script src="/static/js/main.js"></script>
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->

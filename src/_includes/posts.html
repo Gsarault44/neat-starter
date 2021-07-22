@@ -47,22 +47,69 @@ prism: false
                 </div>
                 <div class="desc">
                     {{ description }}
-                    <div class="counter">
-                        <button id="count-down">++</button>
-                        <div id="counter">0</div>
-                        <button id="count-up">++</button>
+                    <div class="desc-icons">
+
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="40" height="40" fill="url(#pattern0)" />
+                            <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0" transform="scale(0.0142857)" />
+                                </pattern>
+                                <image id="image0" width="70" height="70"
+                                    xlink:href="data:image/png;base64,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" />
+                            </defs>
+                        </svg>
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="46" height="46" fill="url(#pattern1)" />
+                            <defs>
+                                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image1" transform="scale(0.0113636)" />
+                                </pattern>
+                                <image id="image1" width="88" height="88"
+                                    xlink:href="data:image/png;base64,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" />
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="action">
+                        <div class="counter">
+                            <span class="count-down" id="count-down">-</span>
+                            <div class="count" id="counter">1</div>
+                            <span class="count-up" id="count-up">+</span>
+                        </div>
+                        <button class="button">Buy Now 
+                            <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.9599 0.0599854C12.8688 0.0995869 12.7861 0.157627 12.7164 0.230782C12.6466 0.303753 12.5912 0.390438 12.5534 0.485874C12.5156 0.58131 12.4961 0.683621 12.4961 0.786947C12.4961 0.890273 12.5156 0.992584 12.5534 1.08802C12.5912 1.18346 12.6466 1.27014 12.7164 1.34311L15.9365 4.71483H1.24993C1.05104 4.71483 0.860289 4.79759 0.71965 4.94491C0.57901 5.09223 0.5 5.29203 0.5 5.50037C0.5 5.70871 0.57901 5.90852 0.71965 6.05584C0.860289 6.20316 1.05104 6.28592 1.24993 6.28592H15.9362L12.7164 9.6573C12.5756 9.8048 12.4965 10.0049 12.4965 10.2135C12.4965 10.4221 12.5756 10.6221 12.7164 10.7696C12.8572 10.9171 13.0482 11 13.2474 11C13.4465 11 13.6375 10.9171 13.7783 10.7696L18.2779 6.05637C18.3477 5.9834 18.4031 5.89671 18.441 5.80128C18.4788 5.70584 18.4982 5.60353 18.4982 5.50021C18.4982 5.39688 18.4788 5.29457 18.441 5.19913C18.4031 5.1037 18.3477 5.01701 18.2779 4.94404L13.7783 0.230782C13.7087 0.157627 13.6259 0.0995869 13.5348 0.0599854C13.4437 0.0203839 13.346 0 13.2474 0C13.1487 0 13.0511 0.0203839 12.9599 0.0599854Z" fill="white"/></svg>
+                        </button>
                     </div>
                 </div>
-                {{ facts }}
-                {{ ingredients }}
-                {% for item in review %}
-                    {{ item. review_stars }}
-                    {{ item. review_title }}
-                    {{ item. review_content }}
-                    {{ item. review_submitted }}
-                    {{ item. review_bt }}
-                    {{ item. review_location }}
-                {% endfor %}
+                <div class="container">
+                    <ul class="accordion">
+                        <li>
+                            <h3 class="question">nutrition facts</h3>
+                            <div class="answer"><img src="{{ facts }}"/></div>
+                        </li>
+                        <li>
+                            <h3 class="question">ingredients</h3>
+                            <div class="answer">{{ ingredients }}</div>
+                        </li>
+                        <li>
+                            <h3 class="question">reviews</h3>
+                            <div class="answer">{% for item in review %}
+                            {{ item. review_stars }}
+                            {{ item. review_title }}
+                            {{ item. review_content }}
+                            {{ item. review_submitted }}
+                            {{ item. review_bt }}
+                            {{ item. review_location }}
+                            {% endfor %}</div>
+                        </li>
+                    </ul>
+                </div>
+
+        
+                
             </div>
             <div class="product-media" bp="6@md"> 
                 <img src="{{ product_package }}" />
