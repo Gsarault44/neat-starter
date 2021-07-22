@@ -1,15 +1,19 @@
 ---
+font: Cartoon
+bg-color: Blue
+product_package: /static/img/box3in1.png
+product_pieces: /static/img/pebbles.png
 headline: Banana Headline
 subhead: sub headline
 title: Test
 stars: 4
 count: 183
 price: $4.42
-description: descriptiion
 facts: /static/img/box3in1.png
 ingredients: Cardboard
 author: greg
 date: 2020-09-01
+description: descriptiion
 review:
   - review_title: Best Cereal Ever!
     review_submitted: Submitted 2 Months ago
@@ -17,6 +21,12 @@ review:
     review_stars: 2
     review_content: I like the cereal
     review_location: out side Philly
+  - review_title: Best Cereal Ever!
+    review_submitted: Submitted 2 Months ago
+    review_by: By Melissa
+    review_stars: 4
+    review_content: food
+    review_location: Mother land
 tags:
   - left
   - center
