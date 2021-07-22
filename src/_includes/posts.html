@@ -20,6 +20,24 @@ prism: true
         {{ font }}
         {{ bg_color }}
         {{ product_package }}
+        {{ product_pieces }}
+        {{ headline }}
+        {{ subhead }}
+        {{ title }}
+        {{ stars }}
+        {{ count }}
+        {{ price }}
+        {{ description }}
+        {{ facts }}
+        {{ ingredients }}
+        {% for item in review %}
+            {{ item. review_stars }}
+            {{ item. review_title }}
+            {{ item. review_content }}
+            {{ item. review_submitted }}
+            {{ item. review_bt }}
+            {{ item. review_location }}
+        {% endfor %}
         <p>banana</p>
         {{ content | safe }}
     </article>
