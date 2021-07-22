@@ -9,8 +9,8 @@ prism: false
             <h1>{{ headline }}</h1>
             <p>{{ subhead }}</p>
         </div> 
-        <div bp="grid">
-            <div bp="6@md"> 
+        <div class="main" bp="grid">
+            <div bp="5@md"> 
                 <h2>{{ title }}</h2>
                 <div> 
                     {% if stars == '1' %}
@@ -37,7 +37,7 @@ prism: false
                     <span>({{ count }} reviews)</span>
                 </div>
                 
-                <div bp="vertical-center">
+                <div class="price">
                     {{ price }}&nbsp; <svg width="115" height="28" viewBox="0 0 115 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M115 24H0V4H115L110.909 14L115 24Z" fill="#236192" />
                         <path
@@ -46,7 +46,7 @@ prism: false
                     </svg>
                 </div>
                 <div class="desc">
-                    {{ description }}
+                    <p>{{ description }}</p>
                     <div class="desc-icons">
 
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -73,29 +73,53 @@ prism: false
                         </svg>
 
                     </div>
+
+                    <div class="action">
+                        <select>
+                            <option>Fruity Pebbles Crisps</option>
+                            <option>Cocoa Pebbles Crisps</option>
+                            <option>Honeycomb Big Bites</option>
+                            <option>Chocolate Honeycomb Big Bites</option>
+                            <option>Sweet and Salty Pebbles Shakeups</option>
+                            <option>Chocolate Pebbles Shake-ups</option>
+                        </select>
+                    </div>
                     <div class="action">
                         <div class="counter">
-                            <span class="count-down" id="count-down">-</span>
+                            <span class="count-down" id="count-down"><svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 2H1C0.45 2 0 1.55 0 1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1C14 1.55 13.55 2 13 2Z" fill="#231C0F"/></svg></span>
                             <div class="count" id="counter">1</div>
-                            <span class="count-up" id="count-up">+</span>
+                            <span class="count-up" id="count-up"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.85"><path d="M18 13H13V18C13 18.55 12.55 19 12 19C11.45 19 11 18.55 11 18V13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H11V6C11 5.45 11.45 5 12 5C12.55 5 13 5.45 13 6V11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z" fill="#231C0F" /></g></svg></span>
                         </div>
                         <button class="button">Buy Now 
                             <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.9599 0.0599854C12.8688 0.0995869 12.7861 0.157627 12.7164 0.230782C12.6466 0.303753 12.5912 0.390438 12.5534 0.485874C12.5156 0.58131 12.4961 0.683621 12.4961 0.786947C12.4961 0.890273 12.5156 0.992584 12.5534 1.08802C12.5912 1.18346 12.6466 1.27014 12.7164 1.34311L15.9365 4.71483H1.24993C1.05104 4.71483 0.860289 4.79759 0.71965 4.94491C0.57901 5.09223 0.5 5.29203 0.5 5.50037C0.5 5.70871 0.57901 5.90852 0.71965 6.05584C0.860289 6.20316 1.05104 6.28592 1.24993 6.28592H15.9362L12.7164 9.6573C12.5756 9.8048 12.4965 10.0049 12.4965 10.2135C12.4965 10.4221 12.5756 10.6221 12.7164 10.7696C12.8572 10.9171 13.0482 11 13.2474 11C13.4465 11 13.6375 10.9171 13.7783 10.7696L18.2779 6.05637C18.3477 5.9834 18.4031 5.89671 18.441 5.80128C18.4788 5.70584 18.4982 5.60353 18.4982 5.50021C18.4982 5.39688 18.4788 5.29457 18.441 5.19913C18.4031 5.1037 18.3477 5.01701 18.2779 4.94404L13.7783 0.230782C13.7087 0.157627 13.6259 0.0995869 13.5348 0.0599854C13.4437 0.0203839 13.346 0 13.2474 0C13.1487 0 13.0511 0.0203839 12.9599 0.0599854Z" fill="white"/></svg>
                         </button>
                     </div>
                 </div>
-                <div class="container">
+                <div class="accordion-wrapper">
                     <ul class="accordion">
                         <li>
-                            <h3 class="question">nutrition facts</h3>
+                            <h3 class="question">nutrition facts <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.256949 0.251763C0.338192 0.171957 0.434707 0.10864 0.540964 0.0654386C0.64722 0.022237 0.761131 0 0.876172 0C0.991214 0 1.10512 0.022237 1.21138 0.0654386C1.31764 0.10864 1.41415 0.171957 1.4954 0.251763L6.74305 5.3935C6.8245 5.4731 6.88912 5.56767 6.93321 5.67178C6.9773 5.77589 7 5.88751 7 6.00023C7 6.11294 6.9773 6.22456 6.93321 6.32867C6.88912 6.43278 6.8245 6.52735 6.74305 6.60695L1.4954 11.7487C1.33117 11.9096 1.10843 12 0.876172 12C0.643919 12 0.421177 11.9096 0.256949 11.7487C0.0927206 11.5878 0.000458755 11.3695 0.000458751 11.142C0.000458746 10.9144 0.0927206 10.6961 0.256949 10.5352L4.88713 6.00023L0.256949 1.46521C0.1755 1.38561 0.110879 1.29104 0.0667874 1.18693C0.0226959 1.08282 0 0.971207 0 0.858488C0 0.745768 0.0226959 0.634156 0.0667874 0.530044C0.110879 0.425933 0.1755 0.331366 0.256949 0.251763Z"
+                                    fill="#472118" />
+                            </svg>
+</h3>
                             <div class="answer"><img src="{{ facts }}"/></div>
                         </li>
                         <li>
-                            <h3 class="question">ingredients</h3>
+                            <h3 class="question">ingredients <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.256949 0.251763C0.338192 0.171957 0.434707 0.10864 0.540964 0.0654386C0.64722 0.022237 0.761131 0 0.876172 0C0.991214 0 1.10512 0.022237 1.21138 0.0654386C1.31764 0.10864 1.41415 0.171957 1.4954 0.251763L6.74305 5.3935C6.8245 5.4731 6.88912 5.56767 6.93321 5.67178C6.9773 5.77589 7 5.88751 7 6.00023C7 6.11294 6.9773 6.22456 6.93321 6.32867C6.88912 6.43278 6.8245 6.52735 6.74305 6.60695L1.4954 11.7487C1.33117 11.9096 1.10843 12 0.876172 12C0.643919 12 0.421177 11.9096 0.256949 11.7487C0.0927206 11.5878 0.000458755 11.3695 0.000458751 11.142C0.000458746 10.9144 0.0927206 10.6961 0.256949 10.5352L4.88713 6.00023L0.256949 1.46521C0.1755 1.38561 0.110879 1.29104 0.0667874 1.18693C0.0226959 1.08282 0 0.971207 0 0.858488C0 0.745768 0.0226959 0.634156 0.0667874 0.530044C0.110879 0.425933 0.1755 0.331366 0.256949 0.251763Z"
+                                    fill="#472118" />
+                            </svg>
+</h3>
                             <div class="answer">{{ ingredients }}</div>
                         </li>
                         <li>
-                            <h3 class="question">reviews</h3>
+                            <h3 class="question">reviews <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.256949 0.251763C0.338192 0.171957 0.434707 0.10864 0.540964 0.0654386C0.64722 0.022237 0.761131 0 0.876172 0C0.991214 0 1.10512 0.022237 1.21138 0.0654386C1.31764 0.10864 1.41415 0.171957 1.4954 0.251763L6.74305 5.3935C6.8245 5.4731 6.88912 5.56767 6.93321 5.67178C6.9773 5.77589 7 5.88751 7 6.00023C7 6.11294 6.9773 6.22456 6.93321 6.32867C6.88912 6.43278 6.8245 6.52735 6.74305 6.60695L1.4954 11.7487C1.33117 11.9096 1.10843 12 0.876172 12C0.643919 12 0.421177 11.9096 0.256949 11.7487C0.0927206 11.5878 0.000458755 11.3695 0.000458751 11.142C0.000458746 10.9144 0.0927206 10.6961 0.256949 10.5352L4.88713 6.00023L0.256949 1.46521C0.1755 1.38561 0.110879 1.29104 0.0667874 1.18693C0.0226959 1.08282 0 0.971207 0 0.858488C0 0.745768 0.0226959 0.634156 0.0667874 0.530044C0.110879 0.425933 0.1755 0.331366 0.256949 0.251763Z" fill="#472118"/>
+</svg>
+</h3>
                             <div class="answer">{% for item in review %}
                             {{ item. review_stars }}
                             {{ item. review_title }}
@@ -111,9 +135,9 @@ prism: false
         
                 
             </div>
-            <div class="product-media" bp="6@md"> 
-                <img src="{{ product_package }}" />
-                <img src="{{ product_pieces }}" />
+            <div class="product-media" bp="6@md offset-7@md"> 
+                <img class="product-main" src="{{ product_package }}" />
+                <img class="product-secondary" src="{{ product_pieces }}" />
             </div>
         </div>
     </article>

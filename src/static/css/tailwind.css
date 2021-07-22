@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Caferteria-Black";
+  src: url(/static/font/Cafeteria-Black.otf);
+}
+
+@font-face {
+  font-family: "Dax";
+  src: url(/static/font/Dax-Bold-Italic.otf);
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url(/static/font/Graphie-Book.otf);
+}
+
+@font-face {
+  font-family: "Graphie Light";
+  src: url(/static/font/Graphie-Light.otf);
+}
+
+@font-face {
+  font-family: "Graphie SemiBold";
+  src: url(/static/font/Graphie-SemiBold.otf);
+}
+
+@font-face {
+  font-family: "Graphie Bold";
+  src: url(/static/font/Graphie-Bold.otf);
+}
+
+@font-face {
+  font-family: "Graphie ExtraBold";
+  src: url(/static/font/Graphie-ExtraBold.otf);
+}
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -31,6 +66,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  font-family: "Graphie";
 }
 ol, ul {
 	list-style: none;
@@ -48,6 +84,33 @@ table {
 	border-spacing: 0;
 }
 
+
+.u-font-Classy .intro h1 {
+  font-family: 'Dax', Times, serif;
+  font-size: calc(2.375rem + 52 * ((100vw - 320px) / 1300));
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.u-font-Cartoon .intro h1 {
+  font-size: calc(2.375rem + 52 * ((100vw - 320px) / 1300));
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  font-family: 'Caferteria-Black', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.u-font-Cartoon .main h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.69;
+  letter-spacing: 0.02em;
+  color: #472118;
+  text-transform: uppercase;
+  font-family: "Graphie ExtraBold";
+}
+
+
 .brand {
   padding-top: 50px;
   margin-bottom: 50px;
@@ -59,19 +122,52 @@ table {
   padding: 0 20px;
 }
 
+.c-product {
+  margin-bottom: 120px;
+}
+
 .intro {
   margin-bottom: 52px;
+}
+
+.product-media {
+  position: relative;
 }
 
 .product-media img {
   width: 100%;
 }
 
+.product-secondary {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
 .container {
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.price {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Graphie Bold";
+}
+
+.price svg {
+  margin-left: 10px;
+}
+
+.desc p {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: #472118;
+  opacity: 0.75;
 }
 
 .answer {
@@ -80,6 +176,10 @@ table {
 
 .shown .answer{
   display: block;
+}
+
+.accordion-wrapper {
+  margin-top: 40px;
 }
 
 .accordion {
@@ -96,29 +196,6 @@ table {
   padding: 20px 0;
   color: black;
 }
-.accordion h3::after,
-.accordion h3::before {
-  top: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  margin-top: -5px;
-  right: 30px;
-}
-
-.accordion h3 ::after {
-  border-top-color: white;
-  border-width: 10px;
-  margin-right: -10px;
-}
-
-.accordion h3 ::before {
-  border-width: 13px;
-  margin-right: -13px;
-}
 
 .accordion h3:hover{
   color:white;
@@ -133,9 +210,6 @@ table {
 
 .u-bg-color--Yellow .intro h1 {
   color: #DA291C;
-  font-size: calc(2.375rem + 52 * ((100vw - 320px) / 1300));
-  letter-spacing: 0.02em;
-  line-height: 1.2;
 }
 
 
@@ -143,9 +217,14 @@ table {
 .footer {
   background-color: #472118;
   padding: 42px 20px 71px;
+  margin: 0 auto;
+}
+
+.footer-content {
   max-width: 1170px;
   margin: 0 auto;
 }
+
 
 .footer-copy {
   margin-bottom: 20px;
@@ -169,10 +248,18 @@ table {
 }
 
 .footer-list li {
+  font-size: 12px;
+  line-height: 1.83;
+  font-family: "Graphie Light";
+  letter-spacing: 0.03em;  font-family: "Graphie SemiBold";
   flex: 0 0 33%;
 }
 
 .footer-copy p {
+  font-size: 12px;
+  line-height: 1.83;
+  font-family: "Graphie Light";
+  letter-spacing: 0.03em;
   color: #FFFFFF;
 }
 
@@ -194,7 +281,17 @@ table {
 
 .action {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.action select {
+  width: 100%;
+  padding: 16px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .counter {
@@ -202,30 +299,48 @@ table {
   background-color: #FFFFFF;
   border: 1px solid #231C0F;
   border-radius: 8px;
-  margin-right: 19px;
   display: inline-flex;
   align-items: center;
-  font-size: 16px;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-right: 20px;
+  flex: 0 0 30%;
 }
 
 .count-up {
-  padding: 12px 20px;
-  font-size: 22px;
+  padding: 10px 20px;
+  font-size: 20px;
 }
 
 .count-down {
-  padding: 12px 20px;
+  padding: 10px 20px;
   font-size: 22px;
+  display: flex;
+  align-items: center;
 }
 
 .button {
+  flex: auto;
   background-color: #DA291C;
   border-radius: 8px;
-  padding: 16px 80px;
+  padding: 17px 20px;
   color: #FFFFFF;
   box-shadow: none;
   border: 0;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button svg {
+  margin-left: 10px;
+}
+
+.question {
+  font-family: "Graphie SemiBold";
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .u-bg-color--Yellow .intro p {
@@ -254,12 +369,4 @@ table {
   background: rgb(255,255,255);
   background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(35,28,15,0.5) 96%);
   background-repeat: no-repeat;
-}
-
-.u-font-Classy {
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.u-font-Cartoon {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
