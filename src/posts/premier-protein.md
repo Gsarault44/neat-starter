@@ -1,6 +1,6 @@
 ---
 font: Cartoon
-bg-color: Orange
+bg_color: Yellow
 product_package: /static/img/premier-box-1.png
 product_pieces: /static/img/premier-silo-1.png
 headline: Feel good about great taste.
@@ -29,4 +29,5 @@ review:
     review_stars: 4
     review_content: good
     review_location: Candy Land
+bg-color: Orange
 ---
