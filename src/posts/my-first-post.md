@@ -1,6 +1,6 @@
 ---
 font: Classy
-bg_color: Blue
+bg_color: White
 product_package: /static/img/box3in1.png
 product_pieces: /static/img/pebbles.png
 headline: Banana Headline
