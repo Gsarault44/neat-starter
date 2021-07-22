@@ -1,6 +1,6 @@
 ---
 font: Cartoon
-bg-color: Blue
+bg_color: Blue
 product_package: /static/img/box3in1.png
 product_pieces: /static/img/pebbles.png
 headline: Banana Headline
@@ -13,7 +13,6 @@ facts: /static/img/box3in1.png
 ingredients: Cardboard
 author: greg
 date: 2020-09-01
-description: descriptiion
 review:
   - review_title: Best Cereal Ever!
     review_submitted: Submitted 2 Months ago
@@ -31,6 +30,8 @@ tags:
   - left
   - center
   - right
+bg-color: Blue
+description: descriptiion
 ---
 # This is a Heading h1
 
