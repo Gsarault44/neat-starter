@@ -1,28 +1,18 @@
 ---
 layout: default
-prism: true
+prism: false
 ---
 
 <div class="container max-w-4xl mt-6  px-6">
-    <div class="pb-5 mb-5 border-b border-gray-100">
-        <h1 class="font-bold text-5xl">{{title}}</h1>
-        <p class="text-center text-base leading-6 font-medium text-gray-500">
-            <time> {{ date | readableDate }}
-                by
-                <a>{{ author }}</a>
+    <article class="c-product">
+        <div class="intro">
+            <h1>{{ headline }}</h1>
+            <p>{{ subhead }}</p>
+        </div> 
 
-            </time>
-        </p>
-
-    </div>
-    <article class="prose lg:prose-xl my-4 mx-auto">
-        <p>banana</p>
-        {{ font }}
-        {{ bg_color }}
-        {{ product_package }}
-        {{ product_pieces }}
-        {{ headline }}
-        {{ subhead }}
+        <img src="{{ product_package }}" />
+        <img src="{{ product_pieces }}" />
+    
         {{ title }}
         {{ stars }}
         {{ count }}
@@ -38,8 +28,6 @@ prism: true
             {{ item. review_bt }}
             {{ item. review_location }}
         {% endfor %}
-        <p>banana</p>
-        {{ content | safe }}
     </article>
 
 </div>

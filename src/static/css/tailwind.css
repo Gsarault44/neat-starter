@@ -1,20 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/*Your Custom CSS Goes here*/
-
-h1 {
-  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+.u-bg-color--Yellow {
+  background: rgb(255,255,255);
+  background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(253,215,87,1) 16%);
+  background-repeat: no-repeat;
 }
 
-h3 {
-  @apply text-2xl font-bold mb-3;
+.u-bg-color--Yellow .intro h1 {
+  color: #DA291C;
+  font-size: calc(2.375rem + 52 * ((100vw - 320px) / 1300));
+  letter-spacing: 0.02em;
+  line-height: 1.2;
 }
 
-/* Syntax Highlighting*/
+.u-bg-color--Yellow .intro p {
+  font-family: "Graphie";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: #472118;
+  opacity: 0.75;
+}
 
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  @apply bg-gray-800;
+.u-bg-color--Blue {
+  background: rgba(35,97,146,1);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.u-bg-color--Orange {
+  background: rgba(242,169,0,1);
+  background-repeat: no-repeat;
+}
+
+.u-bg-color--Silver {
+  background: rgb(255,255,255);
+  background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(35,28,15,0.5) 96%);
+  background-repeat: no-repeat;
+}
+
+.u-font-Classy {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.u-font-Cartoon {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
