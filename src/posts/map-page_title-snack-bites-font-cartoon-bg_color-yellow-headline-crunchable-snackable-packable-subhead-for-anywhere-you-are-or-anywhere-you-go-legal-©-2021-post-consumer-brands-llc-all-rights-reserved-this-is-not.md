@@ -1,4 +1,5 @@
 ---
+slug: snack-bites
 page_title: Snack Bites
 font: Cartoon
 bg_color: Yellow
