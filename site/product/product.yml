@@ -1,0 +1,14 @@
+title: das
+font: Classy
+bg_color: Blue
+headline: dsa
+subhead: das
+Product:
+  - product_title: das
+    product_package: /static/img/fruity-box.png
+    product_pieces: /static/img/fruity-box.png
+    price: das
+    description: das
+    facts: /static/img/nut-facts.png
+    ingredients: dasdsa
+legal: dasd
