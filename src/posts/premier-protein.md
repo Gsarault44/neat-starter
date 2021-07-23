@@ -1,6 +1,7 @@
 ---
 font: Cartoon
 bg_color: Yellow
+permalink: protein
 product_package: /static/img/premier-box-1.png
 product_pieces: /static/img/premier-silo-1.png
 headline: Feel good about great taste.
